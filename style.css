@@ -1,60 +1,22 @@
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f9f9f9;
-    color: #333;
-}
-
+/* Header section */
 header {
-    background: #0066cc;
+    background: url('https://source.unsplash.com/1600x600/?home,city') no-repeat center center/cover;
     color: white;
-    padding: 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
-.mission, .features, .charges {
-    padding: 20px;
-    max-width: 1000px;
-    margin: auto;
+/* Features background */
+.features {
+    background: url('https://source.unsplash.com/1600x400/?apartment,rent') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: white;
 }
 
-.features .columns {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 10px;
-}
-
-.features .columns div {
-    flex: 1;
-    min-width: 250px;
-    background: #ffffff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-    background: white;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #f0f0f0;
-}
-
+/* Footer background */
 footer {
-    background: #eee;
-    padding: 15px;
+    background: url('https://source.unsplash.com/1600x300/?realestate,buildings') no-repeat center center/cover;
+    color: white;
     text-align: center;
+    padding: 20px;
 }
