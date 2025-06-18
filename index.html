@@ -1,109 +1,71 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Get Your Home Easily</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Home Easily</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Get Your Home Easily</h1>
-    <p>No Dealers. No Exploitation. Just Homes.</p>
-    <nav>
-      <button onclick="scrollToSection('owners')">For Owners</button>
-      <button onclick="scrollToSection('renters')">For Renters</button>
-      <button onclick="scrollToSection('agents')">For Agents</button>
-    </nav>
-  </header>
+    <header>
+        <h1>Get Your Home Easily</h1>
+        <p>No Dealers. No Exploitation. Just Homes.</p>
+    </header>
 
-  <main>
-    <section id="owners">
-      <h2>🔸 For Owners</h2>
-      <ul>
-        <li>Direct ad posting</li>
-        <li>Set rent + 10% service fee</li>
-        <li>No broker hassle</li>
-        <li>Agreement & tenant verification help</li>
-        <li>Short‑term (daily/weekly) with 20% fee</li>
-      </ul>
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>To create a transparent, low-cost, and broker-free rental ecosystem for property owners, renters, and rental partners in India.</p>
     </section>
 
-    <section id="renters">
-      <h2>🔸 For Renters</h2>
-      <ul>
-        <li>Only verified listings</li>
-        <li>Direct rent/security payments</li>
-        <li>Post needs for ₹199 once</li>
-        <li>Security deposit in 2 parts</li>
-        <li>Digital agreements & verification</li>
-      </ul>
+    <section class="features">
+        <h2>Key Features</h2>
+        <div class="columns">
+            <div>
+                <h3>For Owners</h3>
+                <ul>
+                    <li>Post ads directly</li>
+                    <li>Set your own rent (+10% platform fee)</li>
+                    <li>No brokers, full control</li>
+                    <li>Help with agreements & verification</li>
+                </ul>
+            </div>
+            <div>
+                <h3>For Renters</h3>
+                <ul>
+                    <li>No broker calls, only verified listings</li>
+                    <li>Pay rent directly to owner</li>
+                    <li>Post requirements for ₹199</li>
+                    <li>Split security deposit in 2 parts</li>
+                </ul>
+            </div>
+            <div>
+                <h3>For Agents</h3>
+                <ul>
+                    <li>Register for ₹200</li>
+                    <li>Help owners and renters connect</li>
+                    <li>Earn 40% of platform’s fee</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <section id="agents">
-      <h2>🔸 For Agents</h2>
-      <ul>
-        <li>Register for ₹200</li>
-        <li>Earn 40% of platform fee per deal</li>
-        <li>Assist in onboarding & verification</li>
-        <li>Facilitate, not middlemen — owner stays in control</li>
-      </ul>
+    <section class="charges">
+        <h2>Charges Summary</h2>
+        <table>
+            <tr><th>Type</th><th>Fee/Commission</th></tr>
+            <tr><td>Owner listing</td><td>₹0 (self) / ₹199 (assisted)</td></tr>
+            <tr><td>Platform service fee</td><td>10% of rent</td></tr>
+            <tr><td>Agreement creation</td><td>₹500</td></tr>
+            <tr><td>Renter post</td><td>₹199</td></tr>
+            <tr><td>Short-term rent</td><td>20% platform fee</td></tr>
+            <tr><td>Agent registration</td><td>₹200</td></tr>
+            <tr><td>Agent commission</td><td>40% of platform’s cut</td></tr>
+        </table>
     </section>
 
-    <section id="fees">
-      <h2>💰 Charges Summary</h2>
-      <table>
-        <tr><th>Type</th><th>Fee/Commission</th></tr>
-        <tr><td>Owner listing</td><td>₹0 self / ₹199 assisted</td></tr>
-        <tr><td>Platform service</td><td>10% of rent (renter pays)</td></tr>
-        <tr><td>Agreement creation</td><td>₹500 flat</td></tr>
-        <tr><td>Renter requirement post</td><td>₹199 one‑time</td></tr>
-        <tr><td>Short‑term rent</td><td>20% fee</td></tr>
-        <tr><td>Agent registration</td><td>₹200 one‑time</td></tr>
-        <tr><td>Agent commission</td><td>40% of platform cut</td></tr>
-      </table>
-    </section>
-
-    <section id="verification">
-      <h2>🔐 Safety & Verification</h2>
-      <p>DigiLocker KYC, optional badge/trust‑score, all digital & hassle‑free.</p>
-    </section>
-
-    <section id="access">
-      <h2>🌐 Platform Access</h2>
-      <ul>
-        <li>Web + Mobile‑web</li>
-        <li>WhatsApp chatbot onboarding</li>
-        <li>Admin dashboard (Sheet/Airtable)</li>
-        <li>Launch cities: Ghaziabad & Noida</li>
-      </ul>
-    </section>
-
-    <section id="revenue">
-      <h2>📈 Revenue Streams</h2>
-      <ul>
-        <li>Platform fees</li>
-        <li>Listing boosts (₹199–₹999)</li>
-        <li>Agreements (₹500)</li>
-        <li>Renter posts (₹199)</li>
-        <li>Short‑term cut</li>
-        <li>Agent registrations</li>
-        <li>Add-ons (moving kits, verification)</li>
-      </ul>
-    </section>
-
-    <section id="next">
-      <h2>🔜 Next in Development</h2>
-      <ul>
-        <li>App preview link via free hosting</li>
-        <li>Admin panel</li>
-        <li>Agent badge visuals</li>
-        <li>Dummy listings live</li>
-        <li>Domain: getyourhome.in soon</li>
-      </ul>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+    <footer>
+        <p>© 2025 Get Your Home Easily | Live in Noida & Ghaziabad</p>
+    </footer>
 </body>
 </html>
