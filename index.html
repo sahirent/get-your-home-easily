@@ -12,6 +12,7 @@
       <h1>Get Your Home Easily</h1>
       <nav>
         <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Product & Services</a></li>
           <li><a href="#media">Media</a></li>
@@ -30,9 +31,25 @@
     </div>
   </header>
 
+  <section id="home">
+    <h2>Owner Ads</h2>
+    <div class="carousel" id="ownerCarousel">
+      <div class="slide"><img src="https://source.unsplash.com/400x250/?apartment" alt="">2 BHK in Noida – ₹10,000/month</div>
+      <div class="slide"><img src="https://source.unsplash.com/400x250/?living-room" alt="">1 RK in Indirapuram – ₹6,500/month</div>
+      <div class="slide"><img src="https://source.unsplash.com/400x250/?home-interior" alt="">3 BHK in Vasundhara – ₹15,000/month</div>
+    </div>
+    <h2>Renter Ads</h2>
+    <div class="carousel" id="renterCarousel">
+      <div class="slide"><img src="https://source.unsplash.com/400x250/?student" alt="">Student looking PG in Noida – ₹5,000</div>
+      <div class="slide"><img src="https://source.unsplash.com/400x250/?family" alt="">Family needs 2 BHK in Ghaziabad – ₹12,000</div>
+      <div class="slide"><img src="https://source.unsplash.com/400x250/?office" alt="">Professional wants 1 BHK in Vaishali – ₹9,000</div>
+    </div>
+  </section>
+
   <section id="about">
     <h2>About Us</h2>
     <p>We simplify rentals — no brokers, just verified owners and renters.</p>
+    <button class="verify-btn">✅ Verify with DigiLocker</button>
   </section>
 
   <section id="services">
@@ -42,7 +59,7 @@
 
   <section id="media">
     <h2>Media</h2>
-    <p>Coming soon: Video Reels, Posters, and Interviews.</p>
+    <p>Coming soon: Posters, Reels, Campaigns, and News.</p>
   </section>
 
   <section id="contact">
@@ -58,5 +75,27 @@
   <footer>
     <p>© 2025 Get Your Home Easily. All rights reserved.</p>
   </footer>
+
+  <a href="https://wa.me/918126757595?text=Hi%2C%20I%27m%20interested%20in%20renting%20a%20home%20via%20Get%20Your%20Home%20Easily." class="whatsapp-float" target="_blank">
+    💬 Chat with Us
+  </a>
+
+  <script>
+    const autoScroll = (carouselId) => {
+      const carousel = document.getElementById(carouselId);
+      let scrollAmount = 0;
+      setInterval(() => {
+        if (scrollAmount <= carousel.scrollWidth - carousel.clientWidth) {
+          carousel.scrollBy({ left: 300, behavior: 'smooth' });
+          scrollAmount += 300;
+        } else {
+          carousel.scrollTo({ left: 0, behavior: 'smooth' });
+          scrollAmount = 0;
+        }
+      }, 3000);
+    };
+    autoScroll('ownerCarousel');
+    autoScroll('renterCarousel');
+  </script>
 </body>
 </html>
