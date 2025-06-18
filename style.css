@@ -54,7 +54,8 @@ th {
 }
 
 footer {
-    background: #eee;
-    padding: 15px;
+    background: url('https://source.unsplash.com/1600x300/?realestate,buildings') no-repeat center/cover;
+    color: white;
     text-align: center;
+    padding: 20px;
 }
