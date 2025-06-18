@@ -8,10 +8,10 @@ body {
 }
 
 header {
-  background: url('https://source.unsplash.com/1600x600/?home,city') no-repeat center/cover;
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
+    background: url('https://source.unsplash.com/1600x600/?home,city') no-repeat center/cover;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .mission, .features, .charges {
